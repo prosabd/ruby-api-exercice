@@ -1,0 +1,9 @@
+
+<%= button_to "New Message", new_message_path, method: :get %>
+<% @messages.each do |message| %>
+  <p>
+    <strong><%= message.title %></strong>
+    <%= message.content %>
+  </p>
+  <hr>
+<% end %>
